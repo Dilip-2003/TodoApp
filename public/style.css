@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+}
+ul{
+    padding: 2%;
+    background-color: aliceblue;
+    width: 30%;
+    
+}
+li{
+    list-style: none;
+}
+.ulDiv{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    text-decoration: none; /* By default, no strikethrough */
+  }
+  
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through; /* Apply strikethrough when checkbox is checked */
+  }
+
+
+  label {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  #textToToggle {
+    font-size: 18px;
+  }
+  
+  #textToToggle.line-through {
+    text-decoration: line-through;
+  }

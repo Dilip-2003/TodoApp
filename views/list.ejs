@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;"><%= kindOfDay %></h1>
+
+    <div class="ulDiv">
+        <ul>
+            <!-- <li>Buy Food</li>
+            <li>Cook Food</li>
+            <li>Eat Food</li> -->
+                <h3>Add/Delete Your target</h3>
+            <% for(i=0;i<newListItem.length;i++) {%>
+    
+            <!-- <li><input type="checkbox" > <%#newListItem[i] %> </li> -->
+
+            <li><input type="checkbox" id="toggleCheckbox">
+                <label for="toggleCheckbox"><%= newListItem[i] %></label>
+                <span id="textToToggle"></span></li>
+                
+            
+            <% } %>
+    
+            <form action="/" method="post">     
+                <input type="text" name="Items" id="" autocomplete="off">
+                <button type="submit">Add</button>
+            </form>
+        </ul>
+    </div>
+   
+
+    <script src="/public/script.js"></script>
+</body>
+</html>
